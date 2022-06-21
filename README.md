@@ -13,3 +13,5 @@ Some links
 Install
 `pip install mkdocs-material`
 
+Projects will be developed using the jupyter-environment:
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/1200px-Jupyter_logo.svg.png">
