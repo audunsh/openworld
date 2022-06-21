@@ -64,10 +64,10 @@ button:hover, a:hover {
   </div>
 
   <div class="card">
-    <h2>Veileder B</h2>
-    <p class="title">Kjemi (bachelor)</p>
-    <a href="#"><i class="fa fa-github"></i></a>
-    <a href="#"><i class="fa fa-linkedin"></i></a>
+    <h2>Elias A. Dalan</h2>
+    <p class="title">Chemistry (bachelor)</p>
+    <a href="https://github.com/cedalan"><i class="fa fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/elias-dalan-1a19a61b6/"><i class="fa fa-linkedin"></i></a>
   </div>
 
   <div class="card">
