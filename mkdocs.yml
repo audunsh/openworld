@@ -23,4 +23,6 @@ extra_javascript:
 
 nav:
   - Home: index.md
+  - Test: Untitled12.md
+  - Test 2: Untitled13.md
   - Developers: developers.md
