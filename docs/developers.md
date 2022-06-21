@@ -1,5 +1,4 @@
-Veilederne i B-tjenesten får pedagogisk opplæring gjennom Læringsassistentprogrammet ved Universitetet i Oslo, og får verdifull praktisk erfaring med utviklerverktøy som git, markdown og Python.
-
+Open World Learning is maintaned by a small team of developers at the University of Oslo.
 
 <html>
 <head>
@@ -71,45 +70,10 @@ button:hover, a:hover {
   </div>
 
   <div class="card">
-    <h2>Navn</h2>
-    <p class="title">Kjemi (bachelor)</p>
-    <a href="#"><i class="fa fa-github"></i></a>
-    <a href="#"><i class="fa fa-linkedin"></i></a>
-  </div>
-
-  <div class="card">
-    <h2>Veileder B</h2>
-    <p class="title">Kjemi (bachelor)</p>
-    <a href="#"><i class="fa fa-github"></i></a>
-    <a href="#"><i class="fa fa-linkedin"></i></a>
-  </div>
-
-  <div class="card">
-    <h2>Navn</h2>
-    <p class="title">Kjemi (bachelor)</p>
-    <a href="#"><i class="fa fa-github"></i></a>
-    <a href="#"><i class="fa fa-linkedin"></i></a>
-  </div>
-
-  <div class="card">
-    <h2>Veileder B</h2>
-    <p class="title">Kjemi (bachelor)</p>
-    <a href="#"><i class="fa fa-github"></i></a>
-    <a href="#"><i class="fa fa-linkedin"></i></a>
-  </div>
-
-  <div class="card">
-    <h2>Navn</h2>
-    <p class="title">Kjemi (bachelor)</p>
-    <a href="#"><i class="fa fa-github"></i></a>
-    <a href="#"><i class="fa fa-linkedin"></i></a>
-  </div>
-
-  <div class="card">
-    <h2>Veileder B</h2>
-    <p class="title">Kjemi (bachelor)</p>
-    <a href="#"><i class="fa fa-github"></i></a>
-    <a href="#"><i class="fa fa-linkedin"></i></a>
+    <h2>Audun Skau Hansen</h2>
+    <p class="title">The Hylleraas Centre for Quantum Molecular Sciences</p>
+    <a href="https://github.com/audunsh"><i class="fa fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/audun-skau-hansen-141072b3/"><i class="fa fa-linkedin"></i></a>
   </div>
 
 

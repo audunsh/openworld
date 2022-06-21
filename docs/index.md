@@ -1,7 +1,7 @@
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v12.0" nonce="tlriJYau"></script>
 
-<img src="https://audunsh.github.io/slides/assets/owl_logo.png" widtth = 250px align=right>
+<img src="https://audunsh.github.io/slides/assets/owl_logo.png" width = 250px align=right>
 
 ## Open World Learning
 
