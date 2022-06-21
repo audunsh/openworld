@@ -1,4 +1,4 @@
-Veilederne i B-tjenesten får pedagogisk opplæring gjennom Læringsassistentprogrammet ved Universitetet i Oslo, og får verdifull praktisk erfaring med utviklerverktøy som git, markdown og Python. 
+Veilederne i B-tjenesten får pedagogisk opplæring gjennom Læringsassistentprogrammet ved Universitetet i Oslo, og får verdifull praktisk erfaring med utviklerverktøy som git, markdown og Python.
 
 
 <html>
@@ -57,10 +57,10 @@ button:hover, a:hover {
 
 
   <div class="card">
-    <h2>Navn</h2>
-    <p class="title">Kjemi (bachelor)</p>
-    <a href="#"><i class="fa fa-github"></i></a>
-    <a href="#"><i class="fa fa-linkedin"></i></a>
+    <h2>Hanan Gharayba</h2>
+    <p class="title">Chemistry (bachelor)</p>
+    <a href="https://github.com/HananGharayba"><i class="fa fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/hanan-gharayba-6a5799207/"><i class="fa fa-linkedin"></i></a>
   </div>
 
   <div class="card">
@@ -115,4 +115,3 @@ button:hover, a:hover {
 
 </body>
 </html>
-
