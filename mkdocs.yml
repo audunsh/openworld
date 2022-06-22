@@ -14,10 +14,13 @@ extra_css:
 plugins:
   - search
   - mkdocstrings
-
+  - mkdocs-jupyter
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
 
 extra_javascript:
   - javascripts/mathjax.js
@@ -35,5 +38,11 @@ nav:
     - Thermodynamics: thermpaths.md
     - Experiments: expaths.md
     - Quantum mechanics: qmpaths.md
-  - Test: Untitled12.md
+  - Internal guides: 
+    - Getting started: getting_started.md
+    - Github: github.md
+    - github.uio.no: github_uio.md
+    - PyPI (pip): pip.md
+    - MKDocs: mkdocs.md
+    - Literature: literature.md
   - Developers: developers.md
