@@ -2,11 +2,14 @@
 theme:
   logo: https://audunsh.github.io/slides/assets/owl_logo.png
   name: "material"
-  favicon: https://raw.githubusercontent.com/audunsh/btjenesten/master/graphics/favicon.png
+  favicon: https://raw.githubusercontent.com/audunsh/openworld/master/docs/assets/owl_favicon.png
   palette:
-    primary: teal
+    primary: root
 
 site_name : Open World
+
+extra_css:
+  - stylesheets/extra.css
 
 plugins:
   - search
@@ -23,6 +26,14 @@ extra_javascript:
 
 nav:
   - Home: index.md
+  - Simulation tools:
+    - Molecular dynamics: mdsim.md
+    - Lattice dynamics: ltsim.md
+    - Quantum mechanics: qmsim.md
+    - Quantum chemistry: qcsim.md
+  - Pathways:
+    - Thermodynamics: thermpaths.md
+    - Experiments: expaths.md
+    - Quantum mechanics: qmpaths.md
   - Test: Untitled12.md
-  - Test 2: Untitled13.md
   - Developers: developers.md
