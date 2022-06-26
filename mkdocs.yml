@@ -36,7 +36,8 @@ nav:
     - Quantum chemistry: qcsim.md
     - Gaussian Process Regression: GPR_presentation.ipynb
   - Pathways:
-    - Thermodynamics: thermpaths.md
+    - Therm:
+      - Thermodynamics: thermpaths.md
     - Experiments: expaths.md
     - Quantum mechanics: qmpaths.md
   - Internal guides: 
