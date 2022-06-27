@@ -34,7 +34,8 @@ nav:
     - Lattice dynamics: ltsim.md
     - Quantum mechanics: qmsim.md
     - Quantum chemistry: qcsim.md
-    - Gaussian Process Regression: GPR_presentation.ipynb
+    - Gaussian Process Regression:
+      - Polynomial Regression: polynomial_regression.ipynb
   - Pathways:
     - Therm:
       - Thermodynamics: thermpaths.md
