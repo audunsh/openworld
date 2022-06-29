@@ -13,7 +13,7 @@
     
     
       
-        <title>Untitled13 - Open World</title>
+        <title>Conventions - Open World</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#oppgave-i-kjm2601" class="md-skip">
+        <a href="#conventions" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Untitled13
+              Conventions
             
           </span>
         </div>
@@ -444,12 +444,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -554,11 +556,69 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../conventions/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Conventions
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Conventions
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#conventions" class="md-nav__link">
+    Conventions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-put-your-name-on-your-work" class="md-nav__link">
+    1. Put your name on your work
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-clarify-the-prerequisite-knowledge" class="md-nav__link">
+    2. Clarify the prerequisite knowledge
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-keep-it-concise" class="md-nav__link">
+    3. Keep it concise
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -610,22 +670,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#oppgave-i-kjm2601" class="md-nav__link">
-    Oppgave i KJM2601
-  </a>
-  
-    <nav class="md-nav" aria-label="Oppgave i KJM2601">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#testing-mathjax" class="md-nav__link">
-    Testing mathjax
+  <a href="#conventions" class="md-nav__link">
+    Conventions
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#1-put-your-name-on-your-work" class="md-nav__link">
+    1. Put your name on your work
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-clarify-the-prerequisite-knowledge" class="md-nav__link">
+    2. Clarify the prerequisite knowledge
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-keep-it-concise" class="md-nav__link">
+    3. Keep it concise
+  </a>
   
 </li>
       
@@ -643,29 +711,18 @@
                 
 
 
-  <h1>Untitled13</h1>
+  <h1>Conventions</h1>
 
-<h2 id="oppgave-i-kjm2601">Oppgave i KJM2601</h2>
-<h3 id="testing-mathjax">Testing mathjax</h3>
-<div class="arithmatex">\[\begin{equation}
-\mathbf{F} = m\frac{d^2}{dt^2}\mathbf{x}
-\end{equation}\]</div>
-<p><html></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zySUlGXbXvA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<p></html></p>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">bubblebox</span> <span class="k">as</span> <span class="nn">bb</span>
-<span class="kn">import</span> <span class="nn">evince</span> <span class="k">as</span> <span class="nn">ev</span>
-
-<span class="n">ev</span><span class="o">.</span><span class="n">enable_notebook</span><span class="p">()</span>
-</code></pre></div>
-<pre><code>&lt;IPython.core.display.Javascript object&gt;
-</code></pre>
-<div class="highlight"><pre><span></span><code><span class="n">bb</span><span class="o">.</span><span class="n">mdbox</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span><span class="o">.</span><span class="n">view</span><span class="p">()</span>
-</code></pre></div>
-<pre><code>MDView(box=[10, 10], colors=[[144, 114, 67], [144, 114, 67], [144, 114, 67], [144, 114, 67], [144, 114, 67], […
-</code></pre>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
+<h2 id="conventions">Conventions</h2>
+<p>Our path will most likely evolve as we traverse it. </p>
+<p>In order to ensure a clean and fair workflow, however, we will follow some simple basic principles:</p>
+<h2 id="1-put-your-name-on-your-work">1. Put your name on your work</h2>
+<p>For exercises, explanatory text, functionality and other content, make sure you sign it with your name. This is done to both document who has contributed what, and make it easier to extend or remix the content for future usage. Do not hesitate in taking credit for your contributions.</p>
+<h2 id="2-clarify-the-prerequisite-knowledge">2. Clarify the prerequisite knowledge</h2>
+<p>I am aware we do not yet have the full-fledged framework ready, but I'd like you to think carefully through what prerequisite knowledge is needed by the students when moving though your content/path. It should be written explicitly at the beginning of the notebook.</p>
+<h2 id="3-keep-it-concise">3. Keep it concise</h2>
+<p>Do not introduce too many concepts in each path. If it grows out of control, you should likely split it into multiple notebooks.</p>
+<p><img src="https://audunsh.github.io/slides/assets/owl_sky_200_perspective.png"></p>
 
               
             </article>
@@ -676,6 +733,42 @@
       </main>
       
         <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../literature/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Literature" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Literature
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../developers/" class="md-footer__link md-footer__link--next" aria-label="Next: Developers" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Developers
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
