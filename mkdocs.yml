@@ -48,4 +48,5 @@ nav:
     - PyPI (pip): pip.md
     - MKDocs: mkdocs.md
     - Literature: literature.md
+    - Conventions: conventions.md
   - Developers: developers.md
