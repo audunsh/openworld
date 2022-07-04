@@ -330,6 +330,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Kernels/" class="md-nav__link">
+        Kernels
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1737,23 +1751,13 @@ Licensed under the Apache License, Version 2.0.
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="c1">#from btjenesten import gpr</span>
-<span class="kn">import</span> <span class="nn">sys</span>
-  
-<span class="c1"># adding Folder_2 to the system path</span>
-<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;/Users/elias/btjenesten/btjenesten&quot;</span><span class="p">)</span>
-
-<span class="kn">import</span> <span class="nn">gpr</span>
+<span class="kn">from</span> <span class="nn">btjenesten</span> <span class="kn">import</span> <span class="n">gpr</span>
+<span class="kn">from</span> <span class="nn">btjenesten</span> <span class="kn">import</span> <span class="n">kernels</span> <span class="k">as</span> <span class="n">knls</span>
 </pre></div>
 <div id="cell-1" class="clipboard-copy-txt">import matplotlib.pyplot as plt
 import numpy as np
-#from btjenesten import gpr
-import sys
-  
-# adding Folder_2 to the system path
-sys.path.insert(0, "/Users/elias/btjenesten/btjenesten")
-
-import gpr</div>
+from btjenesten import gpr
+from btjenesten import kernels as knls</div>
     
         </div>
     </div>
@@ -1768,7 +1772,7 @@ import gpr</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -1794,8 +1798,9 @@ import gpr</div>
 <span class="n">regressor</span> <span class="o">=</span> <span class="n">gpr</span><span class="o">.</span><span class="n">Regressor</span><span class="p">(</span><span class="n">x_train_gpr</span><span class="p">,</span> <span class="n">y_train_gpr</span><span class="p">)</span>
 
 <span class="n">x_pred</span> <span class="o">=</span> <span class="n">x</span>
-
+<span class="n">help</span><span class="p">(</span><span class="n">regressor</span><span class="o">.</span><span class="n">predict</span><span class="p">)</span>
 <span class="n">y_pred</span><span class="p">,</span> <span class="n">var</span> <span class="o">=</span> <span class="n">regressor</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x_pred</span><span class="p">,</span> <span class="n">return_variance</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
 
 <span class="n">std</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">var</span><span class="p">)</span>
 </pre></div>
@@ -1810,8 +1815,9 @@ y_train_gpr = f(x_train_gpr).reshape(-1,1)
 regressor = gpr.Regressor(x_train_gpr, y_train_gpr)
 
 x_pred = x
-
+help(regressor.predict)
 y_pred, var = regressor.predict(x_pred, return_variance=True)
+
 
 std = np.sqrt(var)</div>
     
@@ -1835,8 +1841,56 @@ std = np.sqrt(var)</div>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Some variance values were negative. Setting them to zero.
+<pre>Help on method predict in module btjenesten.gpr:
+
+predict(input_data_X, training_data_X=None, training_data_Y=None, return_covariance=False) method of btjenesten.gpr.Regressor instance
+    Predicts output values for some input data given a set of training data 
+    
+    Parameters:
+    -----------
+    input_data_X:
+    Input features that the gpr will evaluate.
+    
+    training_data_X:
+    training data inputs.
+    
+    training_data_Y:
+    training data outputs.
+    
+    return_covariance:
+    Returns variance for each prediction if this is true
+    
+    Returns:
+    -----------
+    predicted_y:
+    Predicted output data given cooresponding input_data_X and a set of training data
+    inputs and outputs (training_data_X, training_data_Y)
+    
+    predicted_covariance_matrix:
+    Predicted variance for each point of predicted output.
+
 </pre>
+</div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-3-4b89b8479c4d&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">     11</span> x_pred <span class="ansi-blue-fg">=</span> x
+<span class="ansi-green-intense-fg ansi-bold">     12</span> help<span class="ansi-blue-fg">(</span>regressor<span class="ansi-blue-fg">.</span>predict<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">---&gt; 13</span><span class="ansi-red-fg"> </span>y_pred<span class="ansi-blue-fg">,</span> var <span class="ansi-blue-fg">=</span> regressor<span class="ansi-blue-fg">.</span>predict<span class="ansi-blue-fg">(</span>x_pred<span class="ansi-blue-fg">,</span> return_variance<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">True</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     14</span> 
+<span class="ansi-green-intense-fg ansi-bold">     15</span> 
+
+<span class="ansi-red-fg">TypeError</span>: predict() got an unexpected keyword argument &#39;return_variance&#39;</pre>
 </div>
 </div>
 
