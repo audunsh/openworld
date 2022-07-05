@@ -36,6 +36,8 @@ nav:
     - Quantum chemistry: qcsim.md
     - Gaussian Process Regression:
       - Polynomial Regression: polynomial_regression.ipynb
+      - Covariance: Covariance.ipynb
+      - Kernels: Kernels.ipynb
   - Pathways:
     - Therm:
       - Thermodynamics: thermpaths.md
