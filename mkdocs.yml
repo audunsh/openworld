@@ -47,6 +47,7 @@ nav:
     - github.uio.no: github_uio.md
     - PyPI (pip): pip.md
     - MKDocs: mkdocs.md
+    - Markdown: markdown.md
     - Literature: literature.md
     - Conventions: conventions.md
   - Developers: developers.md
