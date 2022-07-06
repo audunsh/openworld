@@ -38,6 +38,7 @@ nav:
       - Polynomial Regression: polynomial_regression.ipynb
       - Covariance: Covariance.ipynb
       - Kernels: Kernels.ipynb
+      - Introduction to Gaussian Process Regression: GPR_intro.ipynb
   - Pathways:
     - Therm:
       - Thermodynamics: thermpaths.md
