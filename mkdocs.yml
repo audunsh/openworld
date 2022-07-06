@@ -44,12 +44,15 @@ nav:
     - Experiments: expaths.md
     - Quantum mechanics: qmpaths.md
   - Internal guides: 
-    - Getting started: getting_started.md
-    - Github: github.md
-    - github.uio.no: github_uio.md
-    - PyPI (pip): pip.md
-    - MKDocs: mkdocs.md
-    - Markdown: markdown.md
-    - Literature: literature.md
-    - Conventions: conventions.md
+    - Getting started: 
+      - Getting started: getting_started.md
+      - Github: github.md
+      - github.uio.no: github_uio.md
+      - PyPI (pip): pip.md
+      - MKDocs: mkdocs.md
+      - Markdown: markdown.md
+    - Food for thought:
+      - Writing for students: writing.md
+      - Literature: literature.md
+      - Conventions: conventions.md
   - Developers: developers.md
