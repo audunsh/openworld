@@ -20,7 +20,7 @@ markdown_extensions:
       generic: true
   - pymdownx.superfences
   - pymdownx.tabbed:
-      alternate_style: true 
+      alternate_style: true
 
 extra_javascript:
   - javascripts/mathjax.js
@@ -40,12 +40,12 @@ nav:
       - Kernels: Kernels.ipynb
       - Introduction to Gaussian Process Regression: GPR_intro.ipynb
   - Pathways:
-    - Therm:
-      - Thermodynamics: thermpaths.md
+    - Thermodynamics:
+      - Temperature: bubblebox_learning.ipynb
     - Experiments: expaths.md
     - Quantum mechanics: qmpaths.md
-  - Internal guides: 
-    - Getting started: 
+  - Internal guides:
+    - Getting started:
       - Getting started: getting_started.md
       - Github: github.md
       - github.uio.no: github_uio.md
