@@ -41,6 +41,7 @@ nav:
       - Introduction to Gaussian Process Regression: GPR_intro.ipynb
   - Pathways:
     - Thermodynamics:
+      - Kinetic energy and Temperature: KE_to_Temp_math.ipynb
       - Temperature: bubblebox_learning.ipynb
     - Experiments: expaths.md
     - Quantum mechanics: qmpaths.md
