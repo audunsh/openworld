@@ -39,6 +39,7 @@ nav:
       - Covariance: Covariance.ipynb
       - Kernels: Kernels.ipynb
       - Introduction to Gaussian Process Regression: GPR_intro.ipynb
+      - Quick tutorial on GPR module: quick_gpr_tutorial.ipynb
   - Pathways:
     - Thermodynamics:
       - Kinetic energy and Temperature: KE_to_Temp_math.ipynb
