@@ -35,26 +35,29 @@ nav:
     - Quantum mechanics: qmsim.md
     - Quantum chemistry: qcsim.md
     - Gaussian Process Regression:
-      - Polynomial Regression: polynomial_regression.ipynb
-      - Covariance: Covariance.ipynb
-      - Kernels: Kernels.ipynb
-      - Introduction to Gaussian Process Regression: GPR_intro.ipynb
-      - Quick tutorial on GPR module: quick_gpr_tutorial.ipynb
+      - Polynomial Regression: "Simulation tools/Gaussian process regression/polynomial_regression.ipynb"
+      - Covariance: "Simulation tools/Gaussian process regression/Covariance.ipynb"
+      - Kernels: "Simulation tools/Gaussian process regression/Kernels.ipynb"
+      - Introduction to Gaussian Process Regression: "Simulation tools/Gaussian process regression/GPR_intro.ipynb"
+      - Quick tutorial on GPR module: "Simulation tools/Gaussian process regression/quick_gpr_tutorial.ipynb"
   - Pathways:
     - Thermodynamics:
-      - Temperature: bubblebox_learning.ipynb
+      - Temperature: "Pathways/Thermodynamics/bubblebox_learning.ipynb"
     - Experiments: expaths.md
-    - Quantum mechanics: qmpaths.md
+    - Quantum mechanics:
+      - Introduction to quantum thinking: "Pathways/Quantum mechanics/Quantum_thinking.ipynb"
+      - Eigenfunctions and eigenstates: "Pathways/Quantum mechanics/eigenfunctions_eigenstates.ipynb"
+      - Classical Hydrogen: "Pathways/Quantum mechanics/Classical hydrogen.ipynb"
   - Internal guides:
     - Getting started:
-      - Getting started: getting_started.md
-      - Github: github.md
-      - github.uio.no: github_uio.md
-      - PyPI (pip): pip.md
-      - MKDocs: mkdocs.md
-      - Markdown: markdown.md
+      - Getting started: "Internal guides/Getting started/getting_started.md"
+      - Github: "Internal guides/Getting started/github.md"
+      - github.uio.no: "Internal guides/Getting started/github_uio.md"
+      - PyPI (pip): "Internal guides/Getting started/pip.md"
+      - MKDocs: "Internal guides/Getting started/mkdocs.md"
+      - Markdown: "Internal guides/Getting started/markdown.md"
     - Food for thought:
-      - Writing for students: writing.md
-      - Literature: literature.md
-      - Conventions: conventions.md
+      - Writing for students: "Internal guides/Food for thought/writing.md"
+      - Literature: "Internal guides/Food for thought/literature.md"
+      - Conventions: "Internal guides/Food for thought/conventions.md"
   - Developers: developers.md
