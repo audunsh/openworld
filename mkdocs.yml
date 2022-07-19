@@ -30,7 +30,8 @@ extra_javascript:
 nav:
   - Home: index.md
   - Simulation tools:
-    - Molecular dynamics: mdsim.md
+    - Molecular dynamics: 
+      - mdbox: "mdbox/mdbox_tutorial.ipynb"
     - Lattice dynamics: ltsim.md
     - Quantum mechanics: qmsim.md
     - Quantum chemistry: qcsim.md
