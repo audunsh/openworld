@@ -49,6 +49,7 @@ nav:
       - Introduction to quantum thinking: "Pathways/Quantum mechanics/Quantum_thinking.ipynb"
       - Eigenfunctions and eigenstates: "Pathways/Quantum mechanics/eigenfunctions_eigenstates.ipynb"
       - Classical Hydrogen: "Pathways/Quantum mechanics/Classical hydrogen.ipynb"
+      - Hybridization: "Pathways/Quantum mechanics/hybridization.ipynb"
   - Internal guides:
     - Getting started:
       - Getting started: "Internal guides/Getting started/getting_started.md"
