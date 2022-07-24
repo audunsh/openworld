@@ -33,7 +33,7 @@ nav:
   - Home: index.md
   - Test: "test2.ipynb"
   - Simulation tools:
-    - Molecular dynamics: 
+    - Molecular dynamics:
       - mdbox: "mdbox/mdbox_tutorial.ipynb"
     - Lattice dynamics: ltsim.md
     - Quantum mechanics: qmsim.md
@@ -46,7 +46,8 @@ nav:
       - Quick tutorial on GPR module: "Simulation tools/Gaussian process regression/quick_gpr_tutorial.ipynb"
   - Pathways:
     - Thermodynamics:
-      - Temperature: "Pathways/Thermodynamics/bubblebox_learning.ipynb"
+      - Kinetic energy and Temperature: KE_to_Temp_math.ipynb
+      - Temperature:  "Pathways/Thermodynamics/bubblebox_learning.ipynb"
     - Experiments: expaths.md
     - Quantum mechanics:
       - Introduction to quantum thinking: "Pathways/Quantum mechanics/Quantum_thinking.ipynb"
