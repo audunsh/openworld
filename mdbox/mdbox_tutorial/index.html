@@ -9,15 +9,15 @@
       
       
       <link rel="icon" href="https://raw.githubusercontent.com/audunsh/openworld/master/docs/assets/owl_favicon.png">
-      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.6">
     
     
       
-        <title>Imports - Open World</title>
+        <title>mdbox - Open World</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4a0965b7.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
@@ -67,11 +67,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#imports" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -100,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Imports
+              mdbox
             
           </span>
         </div>
@@ -200,7 +195,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../test2/" class="md-nav__link">
+      <a href="../../test2.ipynb" class="md-nav__link">
         Test
       </a>
     </li>
@@ -277,11 +272,9 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
-        
-      
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Imports
+        mdbox
       </a>
       
     </li>
@@ -903,8 +896,6 @@
   
   
   
-    
-  
   
 </nav>
                   </div>
@@ -1078,33 +1069,6 @@
           notice.hidden = true
         }, 1000)
       })
-</script><script>
-(function() {
-  function addWidgetsRenderer() {
-    var mimeElement = document.querySelector('script[type="application/vnd.jupyter.widget-view+json"]');
-    var scriptElement = document.createElement('script');
-    
-    var widgetRendererSrc = 'https://unpkg.com/@jupyter-widgets/html-manager@*/dist/embed-amd.js';
-    
-    var widgetState;
-
-    // Fallback for older version:
-    try {
-      widgetState = mimeElement && JSON.parse(mimeElement.innerHTML);
-
-      if (widgetState && (widgetState.version_major < 2 || !widgetState.version_major)) {
-        
-        var widgetRendererSrc = 'https://unpkg.com/@jupyter-js-widgets@*/dist/embed.js';
-        
-      }
-    } catch(e) {}
-
-    scriptElement.src = widgetRendererSrc;
-    document.body.appendChild(scriptElement);
-  }
-
-  document.addEventListener('DOMContentLoaded', addWidgetsRenderer);
-}());
 </script>
 
 
@@ -1981,23 +1945,16 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<div class="jumbotron" style="background-image: url(https://raw.githubusercontent.com/audunsh/openworld/master/assets/headers/openworld_header_6206.png); background-size: 100% 100% ; background-color: white; background-repeat: no-repeat;">
-    <div class="container" style="border-width: medium;">
-      <div class="row">
-        <div class="col-sm">
-          <p style="color:white;font-size:100%">BubbleBox.MDBox: 10 minutes tutorial</p>
-            <br>
-           <p style="color:white;font-size:50%">Authors: Audun Skau Hansen <a href="mailto:a.s.hansen@kjemi.uio.no">✉️</a> and Rafael Cortez S. Pupo</p>
-            <br>
-           <p style="color:white;font-size:50%">The Hylleraas Centre for Quantum Molecular Sciences, UiO (2021)</p>
-        </div>
-        </div>
-        <div class="row">
-        <div class="col-sm">
-          <a href="www.hylleraas.no"><img src="https://www.mn.uio.no/hylleraas/english/about/internal/graphical-profile/visual-profile/hylleraas-%E2%80%93-logo-%E2%80%93-white-%E2%80%93%C2%A0screen-%E2%80%93-rgb.png" width = "15%" align = "right"></a>
-        </div>
-      </div>
-    </div>
+<div class="jumbotron" style="background-image: url(https://raw.githubusercontent.com/audunsh/openworld/master/assets/headers/openworld_header_2227.png); background-size: 100% 100% ; background-color: white; background-repeat: no-repeat;">
+   <div class="row">
+  <div class="col-md-8" markdown="1" style="color:white">
+      <h1 >BubbleBox.MDBox: 10 minutes tutorial</h1>
+      Author: Audun Skau Hansen <a href="mailto:a.s.hansen@kjemi.uio.no">✉️</a> and Rafael Cortez S. Pupo, 
+      The Hylleraas Centre for Quantum Molecular Sciences, UiO, 2021 
+  </div>
+  <div class="col-md-4" markdown="1">
+  </div>
+</div>
 </div>
 </div>
 </div>
@@ -2021,7 +1978,30 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="imports">Imports<a class="anchor-link" href="#imports">&#182;</a></h1><p>First, we have import the modules that we are going to use in the simulations:</p>
+<p><div class="list-group" id="list-tab" role="tablist">
+  <h3 class="list-group-item list-group-item-action active" data-toggle="list"  role="tab" aria-controls="home" style = "background-color:rgba(10, 8, 4, .8);border-color:rgba(0, 0, 0, 1)">Content</h3>
+  <a class="list-group-item list-group-item-action" data-toggle="list" href="#Imports" role="tab" aria-controls="profile">Imports<span class="badge badge-primary badge-pill">1</span></a>
+<a class="list-group-item list-group-item-action"  data-toggle="list" href="#Initialization" role="tab" aria-controls="settings">Creating a system<span class="badge badge-primary badge-pill">2</span></a>
+<a class="list-group-item list-group-item-action"  data-toggle="list" href="#Initialization2" role="tab" aria-controls="settings">Creating a view<span class="badge badge-primary badge-pill">2</span></a>
+  <a class="list-group-item list-group-item-action" data-toggle="list" href="#Variables" role="tab" aria-controls="messages">Variables<span class="badge badge-primary badge-pill">3</span></a>
+<a class="list-group-item list-group-item-action"  data-toggle="list" href="#Time propagation" role="tab" aria-controls="settings">Time propagation<span class="badge badge-primary badge-pill">4</span></a>
+  <a class="list-group-item list-group-item-action" data-toggle="list" href="#Periodic boundary conditions" role="tab" aria-controls="settings">Periodic boundary conditions<span class="badge badge-primary badge-pill">5</span></a> 
+  <a class="list-group-item list-group-item-action" data-toggle="list" href="#Mixed boundary conditions" role="tab" aria-controls="settings">Mixed boundary conditions<span class="badge badge-primary badge-pill">6</span></a>
+  <a class="list-group-item list-group-item-action" data-toggle="list" href="#Masses" role="tab" aria-controls="settings">Masses<span class="badge badge-primary badge-pill">7</span></a>
+    <a class="list-group-item list-group-item-action" data-toggle="list" href="#Fixed positions" role="tab" aria-controls="settings">Fixed positions<span class="badge badge-primary badge-pill">8</span></a>
+    <a class="list-group-item list-group-item-action" data-toggle="list" href="#State variables" role="tab" aria-controls="settings">State variables<span class="badge badge-primary badge-pill">9</span></a></p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="imports">Imports<a class="anchor-link" href="#imports">&#182;</a></h1><p>Before we start, it is necessary to import the modules that we are going to use in the simulations.</p>
 
 </div>
 </div>
@@ -2032,7 +2012,7 @@ Licensed under the Apache License, Version 2.0.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -2071,14 +2051,14 @@ ev.enable_notebook()   # Enable frontend WebGL rendering </div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[1]:</div>
 
 
 
 
-<div id="4758baf0-abf3-4144-a46a-57b801811793" class="jp-RenderedJavaScript jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="application/javascript">
+<div id="2381ac42-0121-4573-855d-542f157882e3" class="jp-RenderedJavaScript jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="application/javascript">
 <script type="text/javascript">
-var element = document.getElementById('4758baf0-abf3-4144-a46a-57b801811793');
+var element = document.getElementById('2381ac42-0121-4573-855d-542f157882e3');
 require.undef('mdview');
 require.undef('latticeview');
 require.undef('braketview');
@@ -5943,7 +5923,7 @@ void main() {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -6009,7 +5989,7 @@ Creating a system
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -6069,7 +6049,7 @@ Creating a view
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -6137,16 +6117,8 @@ s.view()</div>
 
 
 
-
-
-
-<div id="f1aaa4cd-f33d-485a-a482-6b27ac138c5c" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('f1aaa4cd-f33d-485a-a482-6b27ac138c5c');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "3f8fefd448224190872f7d09f4b4db3d", "version_major": 2, "version_minor": 0}
-</script>
+<div class="jp-RenderedText jp-OutputArea-output " data-mime-type="text/plain">
+<pre>MDView(box=[-35, -35], colors=[[0.4686023674161778, 0.9995263244389858, 0.44770263407048727], [0.4686023674161…</pre>
 </div>
 
 </div>
@@ -6983,7 +6955,7 @@ Number of collisions with boundary per time: 3.92
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../../test2/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Test" rel="prev">
+        <a href="../.." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -6992,7 +6964,7 @@ Number of collisions with boundary per time: 3.92
               <span class="md-footer__direction">
                 Previous
               </span>
-              Test
+              Home
             </div>
           </div>
         </a>
@@ -7035,10 +7007,10 @@ Number of collisions with boundary per time: 3.92
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      <script src="../../assets/javascripts/bundle.a877e258.min.js"></script>
       
         <script src="../../javascripts/mathjax.js"></script>
       

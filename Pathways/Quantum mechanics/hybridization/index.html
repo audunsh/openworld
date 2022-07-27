@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="https://raw.githubusercontent.com/audunsh/openworld/master/docs/assets/owl_favicon.png">
-      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.6">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.1d29e8d0.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.4a0965b7.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
@@ -200,7 +200,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../test2/" class="md-nav__link">
+      <a href="../../../test2.ipynb" class="md-nav__link">
         Test
       </a>
     </li>
@@ -268,7 +268,7 @@
   
     <li class="md-nav__item">
       <a href="../../../mdbox/mdbox_tutorial/" class="md-nav__link">
-        Imports
+        mdbox
       </a>
     </li>
   
@@ -623,9 +623,40 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          What is hybridization?
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         What is hybridization?
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-hybridized-orbitals-and-why-do-we-need-them" class="md-nav__link">
+    What are hybridized orbitals, and why do we need them?
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -906,6 +937,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-hybridized-orbitals-and-why-do-we-need-them" class="md-nav__link">
+    What are hybridized orbitals, and why do we need them?
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1078,6 +1124,33 @@
           notice.hidden = true
         }, 1000)
       })
+</script><script>
+(function() {
+  function addWidgetsRenderer() {
+    var mimeElement = document.querySelector('script[type="application/vnd.jupyter.widget-view+json"]');
+    var scriptElement = document.createElement('script');
+    
+    var widgetRendererSrc = 'https://unpkg.com/@jupyter-widgets/html-manager@*/dist/embed-amd.js';
+    
+    var widgetState;
+
+    // Fallback for older version:
+    try {
+      widgetState = mimeElement && JSON.parse(mimeElement.innerHTML);
+
+      if (widgetState && (widgetState.version_major < 2 || !widgetState.version_major)) {
+        
+        var widgetRendererSrc = 'https://unpkg.com/@jupyter-js-widgets@*/dist/embed.js';
+        
+      }
+    } catch(e) {}
+
+    scriptElement.src = widgetRendererSrc;
+    document.body.appendChild(scriptElement);
+  }
+
+  document.addEventListener('DOMContentLoaded', addWidgetsRenderer);
+}());
 </script>
 
 
@@ -1965,8 +2038,294 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>You may be familliar with the concept of hybridization of atomic orbitals, where two or more orbitals come together to form</p>
+<p>You may be familliar with the concept of hybridization of atomic orbitals, where two or more orbitals come together to form molecular orbitals of different geometry. Before we dive into the more intricate theory, let us return to the basic definitioins, and build our understanding from the ground up!</p>
 
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Because of the wave-like behaviour of the electron we cannot describe it's position mathmatically as some function $\psi(t)$, because position is not an intrinsic property of the electron. We rather have to describe it by a probability distrubution $\psi(\mathbf{x},t)$, that is, the probability that we find it at some point in space $\mathbf{x}$ at some point in time $t$. We often define the orbital (or rather the geometric figure shown in textbooks and the like) as the region in which the probability to find the electron is high. Lets take a look at an orbital!</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-1">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">braketlab</span> <span class="k">as</span> <span class="nn">bk</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">evince</span> <span class="k">as</span> <span class="nn">ev</span>
+</pre></div>
+<div id="cell-1" class="clipboard-copy-txt">import braketlab as bk
+import numpy as np
+import evince as ev</div>
+    
+        </div>
+    </div>
+
+</div>
+</div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-2">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">#Exponential factor:</span>
+<span class="n">alpha</span> <span class="o">=</span> <span class="mi">1</span> 
+
+<span class="c1">#Azimuthal quantum number:</span>
+<span class="n">l</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="c1">#Magnetic quantum number</span>
+<span class="n">m</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">scaling_factor</span> <span class="o">=</span> <span class="mf">1.5</span> <span class="c1">#If this is too low the orbital might be difficult to look at :-)</span>
+
+<span class="c1">#Position:</span>
+<span class="n">p_pos</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+
+<span class="c1">#Creating the orbital:</span>
+<span class="n">p_gto</span> <span class="o">=</span> <span class="n">bk</span><span class="o">.</span><span class="n">basisbank</span><span class="o">.</span><span class="n">get_gto</span><span class="p">(</span><span class="n">alpha</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">p_pos</span><span class="p">)</span> <span class="o">*</span> <span class="n">scaling_factor</span>
+
+<span class="c1">#Remember that our wavefunction is only a probability amplitude! The square modulus is the probability distribution</span>
+<span class="n">p_gto</span> <span class="o">=</span> <span class="n">p_gto</span> <span class="o">*</span> <span class="n">p_gto</span> 
+
+<span class="c1">#Lets look at it!</span>
+<span class="n">p_gto</span><span class="o">.</span><span class="n">view</span><span class="p">()</span>
+</pre></div>
+<div id="cell-2" class="clipboard-copy-txt">#Exponential factor:
+alpha = 1 
+
+#Azimuthal quantum number:
+l = 1
+
+#Magnetic quantum number
+m = 0
+
+scaling_factor = 1.5 #If this is too low the orbital might be difficult to look at :-)
+
+#Position:
+p_pos = np.array([0, 0, 0])
+
+#Creating the orbital:
+p_gto = bk.basisbank.get_gto(alpha, l, m, p_pos) * scaling_factor
+
+#Remember that our wavefunction is only a probability amplitude! The square modulus is the probability distribution
+p_gto = p_gto * p_gto 
+
+#Lets look at it!
+p_gto.view()</div>
+    
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="33d2a010-f9a8-492a-9246-f600ea4eb340" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('33d2a010-f9a8-492a-9246-f600ea4eb340');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "f3927260810e4e7cbd58f7bc79486bc2", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Pretty cool, right? Your very own p-orbital. If you are running this notebook in the jupyterhub-environment you can even interact with it!</p>
+<h2 id="what-are-hybridized-orbitals-and-why-do-we-need-them">What are hybridized orbitals, and why do we need them?<a class="anchor-link" href="#what-are-hybridized-orbitals-and-why-do-we-need-them">&#182;</a></h2><p>The geometry of normal atomic orbitals (s, p, d, f) does not allow the geometry of molecules, such as bent or tetrahedal shaped molecules. An example of a carbon with its s and p orbitals is shown in the figure under:
+<img src="media/sppp.jpeg" width=20%>
+If this atom was to bond with 4 hydrogens and create methane, a tetrahedal modecule, how would it? We have to extend the orbital model for this to work. A detailed explanation of this extension will not be provided here, but if you want to read more about it you can do so <a href="https://chem.libretexts.org/Courses/Pacific_Union_College/Quantum_Chemistry/10%3A_Bonding_in_Polyatomic_Molecules/10.01%3A_Hybrid_Orbitals_Account_for_Molecular_Shape"> here </a>! To create what we called hybridized orbitals we take linear combinations of the atomic orbitals to create some new molecular orbitals. Lets do this and look at an $sp^3$ hybridized orbital:</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-3">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="n">bk</span><span class="o">.</span><span class="n">basisbank</span><span class="o">.</span><span class="n">get_gto</span><span class="p">(</span><span class="n">alpha</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">px</span> <span class="o">=</span> <span class="n">bk</span><span class="o">.</span><span class="n">basisbank</span><span class="o">.</span><span class="n">get_gto</span><span class="p">(</span><span class="n">alpha</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">py</span> <span class="o">=</span> <span class="n">bk</span><span class="o">.</span><span class="n">basisbank</span><span class="o">.</span><span class="n">get_gto</span><span class="p">(</span><span class="n">alpha</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">pz</span> <span class="o">=</span> <span class="n">bk</span><span class="o">.</span><span class="n">basisbank</span><span class="o">.</span><span class="n">get_gto</span><span class="p">(</span><span class="n">alpha</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="n">scaling_factor</span> <span class="o">=</span> <span class="mf">1.5</span> <span class="c1">#If this is too low the orbital might be difficult to look at :-)</span>
+
+<span class="c1">#sp3 hybridized:</span>
+<span class="n">sp3</span> <span class="o">=</span> <span class="p">(</span><span class="n">s</span> <span class="o">+</span> <span class="n">px</span> <span class="o">+</span> <span class="n">py</span> <span class="o">+</span> <span class="n">pz</span><span class="p">)</span> <span class="o">*</span> <span class="n">scaling_factor</span>
+<span class="n">sp3</span> <span class="o">=</span> <span class="n">sp3</span> <span class="o">*</span> <span class="n">sp3</span>
+
+<span class="n">sp3</span><span class="o">.</span><span class="n">view</span><span class="p">()</span>
+</pre></div>
+<div id="cell-3" class="clipboard-copy-txt">s = bk.basisbank.get_gto(alpha, 0, 0)
+px = bk.basisbank.get_gto(alpha, 1, 0)
+py = bk.basisbank.get_gto(alpha, 1, -1)
+pz = bk.basisbank.get_gto(alpha, 1, 1)
+
+scaling_factor = 1.5 #If this is too low the orbital might be difficult to look at :-)
+
+#sp3 hybridized:
+sp3 = (s + px + py + pz) * scaling_factor
+sp3 = sp3 * sp3
+
+sp3.view()</div>
+    
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="70a02252-2acd-4e36-ab70-ce2ad21a74ae" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('70a02252-2acd-4e36-ab70-ce2ad21a74ae');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "c05daf55d4894cf09fe7b74110685001", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>The big red lobe is what we usually think of as the bonding orbital, while the dim red one is what we usually think of as the antibonding orbital. Isn´t this cool? Now you know about hybridization and why we have to expand our atomic orbital model. At the end of the notebook some questions are provided, that you may discuss with peers or ponder upon by yourself.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="main" style="width:100%;text-align:center;background-color:">
+    <h2> Questions you may ponder upon:</h2>
+    <ul>
+        <li> Orbitals are a mathmatical way of describing the behaviour of electrons, but can they be considered to be truly "real"?.
+        <li> Can you think of any ways that this mathmatical model can provide limitations in our understanding of the quantum world?
+    </ul>
+</div>
 </div>
 </div>
 </div>
@@ -2041,10 +2400,10 @@ Licensed under the Apache License, Version 2.0.
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.a877e258.min.js"></script>
       
         <script src="../../../javascripts/mathjax.js"></script>
       
